@@ -50,3 +50,35 @@
 		text-transform: uppercase;
 	}
 }
+
+@media (max-width: 991px) {
+	.advantages {
+		padding: 60px 15px 78px;
+	}
+}
+
+@media (max-width: 767px) {
+	.advantages {
+		padding: 60px 15px;
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+		&__block {
+			margin-top: 15px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.advantages {
+		padding: 35px 10px;
+		&__wrapper {
+			margin-top: 20px;
+		}
+		&__name {
+			margin-top: 20px;
+		}
+	}
+}

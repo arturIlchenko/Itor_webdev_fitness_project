@@ -1,5 +1,5 @@
 .promo {
-	min-height: 650px;
+	min-height: 630px;
 	padding: 21px 0 93px 0;
 	background: url('../img/first_screen_bg.jpg') center (center/cover) no-repeat;
 
@@ -63,5 +63,45 @@
 	&__link {
 		text-transform: uppercase;
 		color: #ffffff;
+	}
+}
+
+@media (max-width: 991px) {
+	.promo {
+		padding: 21px 15px 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.promo {
+		&__wrapper {
+			padding-top: 53px;
+			align-items: center;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.promo {
+		padding: 10px 10px 60px;
+		min-height: 565px;
+		&__wrapper {
+			padding-top: 35px;
+		}
+		&__header {
+			text-align: center;
+			font-size: 37px;
+		}
+		&__subheader {
+			text-align: center;
+		}
+		&__icons {
+			min-width: 308px;
+			padding: 40px 0;
+		}
+		&__text {
+			font-size: 14px;
+			margin-top: 12px;
+		}
 	}
 }

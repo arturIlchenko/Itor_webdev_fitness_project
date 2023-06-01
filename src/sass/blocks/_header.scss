@@ -40,3 +40,28 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.header {
+		flex-wrap: wrap;
+		&__logo {
+			width: 150px;
+		}
+		// &__contacts {
+		// 	width: 100%;
+		// 	align-items: center;
+		// 	margin-top: 20px;
+		// }
+	}
+}
+
+@media (max-width: 575px) {
+	.header {
+		&__official {
+			display: none;
+		}
+		&__phone {
+			font-size: 16px;
+		}
+	}
+}
