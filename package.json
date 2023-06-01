@@ -1,12 +1,12 @@
 {
-  "name": "uber_priject",
+  "name": "fitness_project",
   "version": "1.0.0",
   "description": "2 modul project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Arthur Ilchenko",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
@@ -17,5 +17,10 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.62.1"
-  }
+  },
+  "browserslist": [
+	"last 1 version",
+	"> 1%",
+	"not dead"
+ ]
 }
