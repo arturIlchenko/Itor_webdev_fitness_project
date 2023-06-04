@@ -4,6 +4,7 @@
 @import "blocks/header";
 @import "blocks/button";
 @import "blocks/advantages";
+@import "blocks/consultation";
 
 * {
 	font-family: "Museo Sans Cyrl", sans-serif;
@@ -16,7 +17,44 @@
 
 .logo {
 	display: block;
+
 	&__img {
 		width: 100%;
+	}
+}
+
+.heading {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #0d0d0d;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 0;
+
+	&_white {
+		color: #ffffff;
+	}
+
+	&_left {
+		text-align: left;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+
+	&__item {
+		height: 50px;
+		background-color: #ffffff;
+		border-radius: 5px;
+		border: none;
+		margin-top: 15px;
+		font-size: 14px;
+		font-weight: 300;
+		color: #4b4b4b;
+		padding: 20px;
 	}
 }
