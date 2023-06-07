@@ -1,7 +1,31 @@
 .carousel {
 	padding: 81px 0 82px;
+
 	&__inner {
 		width: 750px;
 		margin: 0 auto;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__btn {
+		display: block;
+		position: absolute;
+		border: none;
+		background: none;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&_prev {
+		left: -66px;
+		}
+
+		&_next {
+		left: auto;
+		right: -66px;
+		}
 	}
 }
