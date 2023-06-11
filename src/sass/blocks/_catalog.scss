@@ -7,6 +7,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 0;
+		padding: 0 15px;
 	}
 	&__tab {
 		width: 220px;
@@ -175,6 +176,28 @@
 				transform: translateX(-100%);
 				margin-left: 0px;
 			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.catalog {
+		&__content {
+			justify-content: space-around;
+			padding: 0 10px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.catalog {
+		&__tabs {
+			margin-top: 35px;
+			flex-wrap: wrap;
+			padding: 0 10px;
+		}
+		&__tab {
+			margin-bottom: 10px;
 		}
 	}
 }
