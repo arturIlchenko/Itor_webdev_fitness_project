@@ -11,6 +11,13 @@
 	text-align: center;
 	text-transform: uppercase;
 	padding: 3px;
+	transition: all 0.6s;
+
+	&:hover {
+		border: 1px solid $main-color;
+		color: $main-color;
+		background-color: #ffffff;
+	}
 
 	&_main {
 		width: 300px;
@@ -33,6 +40,7 @@
 @media (max-width: 575px) {
 	.button {
 		width: 140px;
+
 		&_main {
 			width: 200px;
 			height: 40px;
