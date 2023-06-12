@@ -62,8 +62,14 @@
 		font-weight: 300;
 		color: #4b4b4b;
 		padding: 20px;
-		&:last-child {
-			margin-bottom: 20px;
-		}
+	}
+	.error {
+		border: 2px solid red; 
+	}
+	label.error {
+		border: none;
+		color: red;
+		margin-bottom: 10px;
+		font-size: 12px;
 	}
 }

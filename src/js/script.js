@@ -44,17 +44,44 @@ $(document).ready(function () {
 	togglesSlide('.catalog-item__back');
 
 	//модальные окна
-	$('[data-modal=consultation]').on('click', function(){
+	$('[data-modal=consultation]').on('click', function () {
 		$('.overlay, #consultation').fadeIn('slow');
 	});
-	$('.modal__close').on('click', function(){
-		$('.overlay').fadeOut('slow');
+	$('.modal__close').on('click', function () {
+		$('.overlay, #consultation, #order, #thanks').fadeOut('slow');
 	});
 
-	$('.button_mini').each(function(i) {
-		$(this).on('click', function() {
+	$('.button_mini').each(function (i) {
+		$(this).on('click', function () {
 			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn('slow');
 		})
-	})
+	});
+
+	validateForms('#consultation .form');
+	validateForms('#order .form');
+	validateForms('.consultation__form');
+
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Пожалуйста, введите Ваше имя",
+				phone: "Пожалуйста, введите Ваш номер телефона",
+				email: {
+					required: "Нам нужен Ваш e-mail для связи",
+					email: "Введите e-mail в формате name@domain.ru"
+				}
+			}
+		});
+	}
+
+	$("input[name=phone]").mask("+7(999) 999-9999");
 })
