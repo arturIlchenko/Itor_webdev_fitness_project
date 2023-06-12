@@ -27,7 +27,7 @@
 
 	&_form {
 		height: 55px;
-		margin-top: 20px;
+		margin-top: 5px;
 	}
 
 	&_mini {
@@ -45,6 +45,9 @@
 			width: 200px;
 			height: 40px;
 			font-size: 14px;
+		}
+		&_form {
+			width: 100%;
 		}
 	}
 }

@@ -9,6 +9,7 @@
 @import "blocks/catalog";
 @import "blocks/feedback";
 @import "blocks/footer";
+@import "blocks/modal";
 
 * {
 	font-family: "Museo Sans Cyrl", sans-serif;
@@ -56,10 +57,13 @@
 		background-color: #ffffff;
 		border-radius: 5px;
 		border: none;
-		margin-top: 15px;
+		margin-bottom: 15px;
 		font-size: 14px;
 		font-weight: 300;
 		color: #4b4b4b;
 		padding: 20px;
+		&:last-child {
+			margin-bottom: 20px;
+		}
 	}
 }
