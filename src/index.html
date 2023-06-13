@@ -8,6 +8,7 @@
 	<title>Fitness</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<script src="https://kit.fontawesome.com/ac614d1249.js" crossorigin="anonymous"></script>
@@ -58,20 +59,20 @@
 			<h2 class="heading">НАШИ ПРЕИМУЩЕСТВА</h2>
 			<div class="advantages__wrapper">
 				<div class="advantages__block">
-					<img src="icons/advantages/icon_cup.png" alt="cup_icon" class="advantages__icon">
+					<img src="icons/advantages/icon_cup.png" alt="cup_icon" class="advantages__icon advantages__icon_animate-cup">
 					<div class="advantages__name">Делимся опытом</div>
 					<div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом,
 						так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
 				</div>
 				<div class="advantages__block">
-					<img src="icons/advantages/icon_heart.png" alt="heart_icon" class="advantages__icon">
+					<img src="icons/advantages/icon_heart.png" alt="heart_icon" class="advantages__icon advantages__icon_animate-pulse">
 					<div class="advantages__name">Заботимся о здоровье</div>
 					<div class="advantages__descr">Мы работаем для того,
 						чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
 					</div>
 				</div>
 				<div class="advantages__block">
-					<img src="icons/advantages/icon_shoe.png" alt="shoe_icon" class="advantages__icon">
+					<img src="icons/advantages/icon_shoe.png" alt="shoe_icon" class="advantages__icon advantages__icon_animate-step">
 					<div class="advantages__name">Учим бегать</div>
 					<div class="advantages__descr">Помогаем с обучением
 						правильной технике бега!
@@ -425,7 +426,7 @@
 		<div class="container">
 			<h2 class="heading">отзывы клиентов</h2>
 			<div class="feedback__wrapper">
-				<div class="feedback__item">
+				<div class="feedback__item wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
 					<img src="img/feedback/feedback_photo_1.png" alt="photo" class="feedback__img">
 					<div class="feedback__content">
 						<div class="feedback__author">Ирина Иванченко</div>
@@ -436,7 +437,7 @@
 							- новый гаджет! <br><br>Спасибо, RunSmart!</div>
 					</div>
 				</div>
-				<div class="feedback__item">
+				<div class="feedback__item wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
 					<img src="img/feedback/feedback_photo_2.png" alt="photo" class="feedback__img">
 					<div class="feedback__content">
 						<div class="feedback__author">Иван Сёмочкин</div>
@@ -448,7 +449,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="feedback__item">
+				<div class="feedback__item wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
 					<img src="img/feedback/feedback_photo_3.png" alt="photo" class="feedback__img">
 					<div class="feedback__content">
 						<div class="feedback__author">Юлия Дашкина</div>
@@ -514,6 +515,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 </body>

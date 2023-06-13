@@ -131,4 +131,5 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
+	new WOW().init();
 })
